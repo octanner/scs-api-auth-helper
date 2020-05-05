@@ -1,7 +1,7 @@
 {
     "name":"API Auth Helper",
     "slug":"api-auth-helper",
-    "version":"0.0.0",
+    "version":"0.0.1",
     "shortDescription":"A module to help authenticate to an API manager",
     "description":"A module to help authenticate to an API manager",
     "author":"Mike Burt",
