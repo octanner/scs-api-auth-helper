@@ -5,7 +5,7 @@ component {
     this.author         = "Mike Burt";
     this.webUrl         = "https://github.com/octanner/scs-api-auth-helper";
     this.description    = "A module to help authenticate to an API manager";
-    this.version            = "0.0.1";
+    this.version            = "0.0.2";
     // If true, looks for views in the parent first, if not found, then in the module. Else vice-versa
     this.viewParentLookup   = true;
     // If true, looks for layouts in the parent first, if not found, then in module. Else vice-versa
