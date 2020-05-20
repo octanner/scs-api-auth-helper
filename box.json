@@ -1,7 +1,7 @@
 {
     "name":"API Auth Helper",
     "slug":"api-auth-helper",
-    "version":"1.0.0",
+    "version":"1.0.1",
     "shortDescription":"A module to help authenticate to an API manager",
     "description":"A module to help authenticate to an API manager",
     "author":"Mike Burt",
@@ -9,7 +9,7 @@
         "Dan Murphy",
         "Eduardo Gomez"
     ],
-    "location":"octanner/scs-api-auth-helper#1.0.0",
+    "location":"octanner/scs-api-auth-helper#1.0.1",
     "homepage":"https://github.com/octanner/scs-api-auth-helper",
     "documentation":"https://github.com/octanner/scs-api-auth-helper",
     "repository":{
