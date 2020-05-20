@@ -34,7 +34,7 @@ component accessors="true"{
 		cfhttp(
 			method="POST",
 			charset="utf-8",
-			url=settings.accessTokenEndpoint,
+			url=settings.tokenEndpoint,
 			result="result"
 		){
 			cfhttpparam(type="header", name="Content-Type", value="application/x-www-form-urlencoded");
