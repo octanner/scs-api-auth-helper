@@ -1,6 +1,6 @@
 component accessors="true"{
 
-	property name="settings" inject="coldbox:setting:api-auth-helper";
+	property name="settings" inject="coldbox:moduleSettings:api-auth-helper";
 	property name="authToken" type="string";
 	property name="authTokenExpirationDateTime" type="string";
 
@@ -9,11 +9,11 @@ component accessors="true"{
 		var token = "";
 		var currentDateTime = now();
 		var expirationDateTime = now();
-		
+
 		// If no Token exists, create one
 		if( (this.getAuthToken() EQ "") AND (this.getAuthTokenExpirationDateTime() EQ "") ){
 			token = deserializeJson(makeTokenRequest().content).access_token;
-			setAuthToken(token); 
+			setAuthToken(token);
 			setAuthTokenExpirationDateTime(dateTimeFormat(currentDateTime, "yyyy-mm-dd HH:nn:ss"));
 		} else {
 			expirationDateTime = dateTimeFormat(getAuthTokenExpirationDateTime(), "yyyy-mm-dd HH:nn:ss");
@@ -22,7 +22,7 @@ component accessors="true"{
 			if (totalMinutes > 59){
 				token = deserializeJson(makeTokenRequest().content).access_token;
 				setAuthToken(token);
-				setAuthTokenExpirationDateTime(dateTimeFormat(currentDateTime, "yyyy-mm-dd HH:nn:ss")); 
+				setAuthTokenExpirationDateTime(dateTimeFormat(currentDateTime, "yyyy-mm-dd HH:nn:ss"));
 			}
 		}
 
