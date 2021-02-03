@@ -1,7 +1,7 @@
 {
     "name":"API Auth Helper",
     "slug":"api-auth-helper",
-    "version":"1.0.2",
+    "version":"1.0.3",
     "shortDescription":"A module to help authenticate to an API manager",
     "description":"A module to help authenticate to an API manager",
     "author":"Mike Burt",
@@ -9,7 +9,7 @@
         "Dan Murphy",
         "Eduardo Gomez"
     ],
-    "location":"octanner/scs-api-auth-helper#1.0.2",
+    "location":"octanner/scs-ztrk-helper#v1.0.3",
     "homepage":"https://github.com/octanner/scs-api-auth-helper",
     "documentation":"https://github.com/octanner/scs-api-auth-helper",
     "repository":{
@@ -19,7 +19,7 @@
     "bugs":"https://github.com/octanner/scs-api-auth-helper/issues",
     "type":"modules",
     "dependencies":{
-        "coldbox":"^4.3.0+188",
+        "coldbox":"^4.3.0+188"
     },
     "devDependencies":{
         "testbox":"^2.4.0+80"
@@ -27,5 +27,9 @@
     "installPaths":{
         "coldbox":"tests/resources/app/coldbox",
         "testbox":"testbox"
+    },
+    "scripts":{
+        "postVersion":"package set location='octanner/scs-ztrk-helper#v`package version`'",
+        "prePublish":"echo 'git tag v`env show interceptData.BOXJSON.version`' | run && echo 'git push origin v`env show interceptData.BOXJSON.version`' | run"
     }
 }
